@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ThemTuActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#ff00"
+        android:layout_gravity="center"
+        android:text="Thêm từ" />
+
+    <EditText
+        android:id="@+id/editTextTenTu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên từ"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextMoTa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mô tả"
+        android:ems="10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/imageButtonCamera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.47"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/camera_icon" />
+
+        <ImageView
+            android:id="@+id/imageViewLoadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="206dp"
+            android:layout_weight="1.47"
+            android:src="@drawable/loadimage" />
+
+        <ImageButton
+            android:id="@+id/imageButtonUpFile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.47"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/upfile" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonThemTu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/buttonHuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Hủy" />
+
+    </LinearLayout>
+
+</LinearLayout>
